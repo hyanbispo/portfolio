@@ -1,4 +1,4 @@
-# 🚀 Portfolio - Hyan Bispo Felix
+# 🚀 Portfólio - Hyan Bispo Felix
 
 Este é o meu portfólio pessoal e profissional, desenvolvido para centralizar meus projetos de Engenharia de Software, automações com IA e experiências em Service Desk.
 
