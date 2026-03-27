@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyan Bispo Felix | Software Engineer & Data Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; overflow-x: hidden; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .project-card:hover { transform: translateY(-10px); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border-color: #38bdf8; box-shadow: 0 20px 25px -5px rgba(56, 189, 248, 0.1); }
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #38bdf8; transition: width 0.3s; }
+        .nav-link:hover::after { width: 100%; }
+        #copy-toast { transition: all 0.3s ease; transform: translate(-50%, 10px); pointer-events: none; }
+        #copy-toast.show { opacity: 1; transform: translate(-50%, 0); }
+    </style>
+</head>
+<body class="selection:bg-sky-500 selection:text-white">
+
+    <nav class="fixed w-full z-50 glass py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <span class="text-xl font-bold tracking-tighter uppercase">Hyan<span  class="text-sky-400"> Bispo</span></span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+                <a href="#home" class="nav-link hover:text-sky-400 transition">Início</a>
+                <a href="#experiencia" class="nav-link hover:text-sky-400 transition">Experiência</a>
+                <a href="#projetos" class="nav-link hover:text-sky-400 transition">Projetos</a>
+                <a href="#contato" class="nav-link hover:text-sky-400 transition">Contato</a>
+            </div>
+            </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-sky-400 font-semibold tracking-widest mb-4 uppercase">Software Engineering Student</h2>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">Soluções técnicas com <span class="gradient-text">foco em performance.</span></h1>
+                <p class="text-slate-400 text-lg mb-8 max-w-lg">Especialista em suporte, automação de sistemas e engenharia de dados. Atualmente cursando o 3º período de Engenharia de Software.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projetos" class="bg-sky-500 hover:bg-sky-600 px-8 py-3 rounded-full font-bold shadow-lg shadow-sky-500/20 transition">Ver Portfólio</a>
+                    <a href="https://github.com/hyanbispo" target="_blank" class="border border-slate-700 hover:bg-slate-800 px-8 py-3 rounded-full font-bold transition flex items-center">
+                        <i class="fab fa-github mr-2"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="relative hidden md:block" data-aos="zoom-in">
+                <div class="absolute -inset-4 bg-sky-500/10 blur-3xl rounded-full"></div>
+                <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=800&q=80" alt="Dev Setup" class="relative rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition duration-700 border border-slate-700">
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="py-24 bg-slate-900/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 text-center uppercase tracking-widest" data-aos="fade-up">Experiência Profissional</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                
+                <div class="glass p-8 rounded-2xl flex flex-col md:flex-row gap-6 border-l-4 border-indigo-500" data-aos="fade-up">
+                    <div class="text-indigo-400 text-3xl pt-1"><i class="fas fa-headset"></i></div>
+                    <div>
+                        <div class="flex justify-between items-start flex-wrap gap-2 mb-2">
+                            <h3 class="text-xl font-bold text-white">Atendente de Service Desk N1</h3>
+                            <span class="text-xs font-mono bg-indigo-500/20 text-indigo-300 px-3 py-1 rounded-full border border-indigo-500/30">2024</span>
+                        </div>
+                        <p class="text-slate-400 mb-4 italic text-sm">Suporte Remoto em Comunidades Técnicas</p>
+                        <ul class="text-slate-300 space-y-2 text-sm list-disc ml-4">
+                            <li>Suporte técnico remoto especializado utilizando <strong>AnyDesk</strong> e <strong>TeamViewer</strong> para diagnóstico de falhas em tempo real.</li>
+                            <li>Execução de protocolos de <strong>otimização de sistema</strong> e limpeza de software para ganho de performance em hardware limitado.</li>
+                            <li>Resolução de conflitos de drivers, periféricos e instabilidades no sistema operacional Windows.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="glass p-8 rounded-2xl flex flex-col md:flex-row gap-6 border-l-4 border-sky-500" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-sky-400 text-3xl pt-1"><i class="fas fa-network-wired"></i></div>
+                    <div>
+                        <div class="flex justify-between items-start flex-wrap gap-2 mb-2">
+                            <h3 class="text-xl font-bold text-white">Apoio Técnico e Operacional</h3>
+                            <span class="text-xs font-mono bg-sky-500/20 text-sky-300 px-3 py-1 rounded-full border border-sky-500/30">2023</span>
+                        </div>
+                        <p class="text-slate-400 mb-4 italic text-sm">SESI / FINDES</p>
+                        <ul class="text-slate-300 space-y-2 text-sm list-disc ml-4">
+                            <li>Atuação em infraestrutura de TI corporativa, manutenção preventiva e corretiva de hardware e softwares locais.</li>
+                            <li>Vivência prática com <strong>cabeamento estruturado</strong> e organização física de redes de dados.</li>
+                            <li>Criação de documentação técnica para registro de chamados e soluções implementadas.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="mb-16 text-center">
+                <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">Projetos de Destaque</h2>
+                <p class="text-slate-400" data-aos="fade-up" data-aos-delay="100">Engenharia de software e integração de dados aplicada.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass p-8 rounded-2xl project-card" data-aos="fade-up">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="p-3 bg-sky-500/10 rounded-lg text-sky-400 text-2xl"><i class="fas fa-plug"></i></div>
+                        <span class="text-[10px] font-mono text-slate-500 uppercase italic">Jan 2026</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Integração Salesforce & Dify</h4>
+                    <p class="text-slate-400 text-sm mb-6">Sincronização de dados automatizada entre CRM e plataformas de IA utilizando APIs REST. Implementado via VS Code com foco em arquitetura limpa.</p>
+                    <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold tracking-widest">
+                        <span class="text-sky-400">Python</span> • <span class="text-sky-400">REST API</span> • <span class="text-sky-400">Salesforce</span>
+                    </div>
+                </div>
+
+                <div class="glass p-8 rounded-2xl project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="p-3 bg-indigo-500/10 rounded-lg text-indigo-400 text-2xl"><i class="fas fa-layer-group"></i></div>
+                        <span class="text-[10px] font-mono text-slate-500 uppercase italic">2025</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Sistema Mini ERP</h4>
+                    <p class="text-slate-400 text-sm mb-6">Desenvolvimento de lógica de back-end para gestão de estoque e finanças, integrando persistência de dados SQL e interface funcional.</p>
+                    <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold tracking-widest">
+                        <span class="text-indigo-400">Python</span> • <span class="text-indigo-400">SQLite</span> • <span class="text-indigo-400">C++</span>
+                    </div>
+                </div>
+
+                <div class="glass p-8 rounded-2xl project-card" data-aos="fade-up">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="p-3 bg-emerald-500/10 rounded-lg text-emerald-400 text-2xl"><i class="fas fa-chart-bar"></i></div>
+                        <span class="text-[10px] font-mono text-slate-500 uppercase italic">2025</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Analytics Dashboard</h4>
+                    <p class="text-slate-400 text-sm mb-6">Visualização de KPIs de e-commerce inspirada no ecossistema Amazon. Processamento de grandes volumes de dados para suporte à decisão.</p>
+                    <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold tracking-widest">
+                        <span class="text-emerald-400">Pandas</span> • <span class="text-emerald-400">SQL</span> • <span class="text-emerald-400">Data Viz</span>
+                    </div>
+                </div>
+
+                <div class="glass p-8 rounded-2xl project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-3 bg-purple-500/10 rounded-lg text-purple-400 text-2xl w-fit mb-6"><i class="fas fa-robot"></i></div>
+                    <h4 class="text-xl font-bold mb-3">Private AI Assistant</h4>
+                    <p class="text-slate-400 text-sm mb-6">Assistente personalizado com engenharia de prompt para interações seguras e automatizadas em ambiente mobile.</p>
+                    <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold tracking-widest">
+                        <span class="text-purple-400">LLM</span> • <span class="text-purple-400">Prompt Engineering</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="py-24 border-t border-slate-800 bg-slate-950 relative">
+        <div id="copy-toast" class="fixed bottom-32 left-1/2 -translate-x-1/2 bg-sky-500 text-white text-xs font-bold px-4 py-2 rounded-full opacity-0 shadow-lg z-50">
+            E-mail copiado! 🚀
+        </div>
+
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8" data-aos="fade-up">Vamos tirar o seu projeto do papel?</h2>
+            
+            <div class="flex justify-center space-x-8 mb-12" data-aos="fade-up" data-aos-delay="100">
+                <button onclick="copyEmail()" class="text-3xl hover:text-sky-400 transition transform hover:scale-125 focus:outline-none">
+                    <i class="fas fa-envelope"></i>
+                </button>
+                <a href="https://linkedin.com/in/hyan-bispo-felix/" target="_blank" class="text-3xl hover:text-sky-400 transition transform hover:scale-125">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/hyanbispo" target="_blank" class="text-3xl hover:text-sky-400 transition transform hover:scale-125">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <div class="text-slate-500 text-sm space-y-2">
+                <p>© 2026 Hyan Bispo Felix.</p>
+                <p class="text-[10px] uppercase tracking-widest opacity-40">Vitória, Espírito Santo</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        function copyEmail() {
+            const email = "hyanbispofelix@gmail.com";
+            const toast = document.getElementById('copy-toast');
+
+            navigator.clipboard.writeText(email).then(() => {
+                toast.classList.add('show');
+                window.location.href = "mailto:" + email;
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 3000);
+            });
+        }
+    </script>
+</body>
+</html>
