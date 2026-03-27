@@ -1,4 +1,4 @@
-# 🚀 Personal Portfolio - Hyan Bispo Felix
+# 🚀 Portfolio - Hyan Bispo Felix
 
 Este é o meu portfólio pessoal e profissional, desenvolvido para centralizar meus projetos de Engenharia de Software, automações com IA e experiências em Service Desk.
 
@@ -28,7 +28,7 @@ O projeto foi construído focado em **performance** e **design responsivo**, uti
 ## 🚀 Como visualizar
 
 Você pode acessar o portfólio online através do link:
-👉 **[INSIRA SEU LINK DA VERCEL OU GITHUB PAGES AQUI]**
+👉 **https://hyanbispo.github.io/portfolio/**
 
 Para rodar localmente:
 1. Clone o repositório: `git clone https://github.com/hyanbispo/portfolio.git`
